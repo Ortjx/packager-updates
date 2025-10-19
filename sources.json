@@ -1,87 +1,72 @@
 {
   "Discord": {
     "url": "https://discord.com/api/download?platform=win",
-    "installer_pattern": "discordsetup",
-    "check": { "type": "redirect" }
+    "check": { "type": "redirect" },
+    "installer_pattern": "discord"
   },
   "Steam": {
-    "url": "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe",
-    "installer_pattern": "steamsetup",
-    "check": { "type": "redirect" }
-  },
-  "Ubisoft Connect": {
-    "url": "https://ubistatic3-a.akamaihd.net/orbit/launcher_installer/UbisoftConnectInstaller.exe",
-    "installer_pattern": "ubisoftconnect",
-    "check": { "type": "redirect" }
+    "url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe",
+    "check": { "type": "redirect" },
+    "installer_pattern": "steam"
   },
   "Epic Games Launcher": {
     "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi",
-    "installer_pattern": "epicgameslauncher",
-    "check": { "type": "redirect" }
+    "check": { "type": "redirect" },
+    "installer_pattern": "epic"
   },
   "Riot Client": {
-    "url": "https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.na.exe",
-    "installer_pattern": "riot",
-    "check": { "type": "redirect" }
-  },
-  "Battle.net": {
-    "url": "https://downloader.battle.net/download/getInstallerForGame?os=win&installer=Battle.net-Setup.exe",
-    "installer_pattern": "battle.net-setup",
-    "check": { "type": "redirect" }
-  },
-  "GOG Galaxy": {
-    "url": "https://webinstallers.gog-statics.com/download/GOG_Galaxy_2.0.exe",
-    "installer_pattern": "gog_galaxy",
-    "check": { "type": "redirect" }
+    "url": "https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.riotclient.installer.exe",
+    "check": { "type": "redirect" },
+    "installer_pattern": "riot"
   },
   "OBS Studio": {
-    "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-Installer.exe",
-    "installer_pattern": "obs-studio",
-    "check": { "type": "redirect" }
+    "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.1.2-Full-Installer-x64.exe",
+    "check": { "type": "html", "pattern": "OBS-Studio-([0-9.]+)" },
+    "installer_pattern": "obs"
   },
-  "Streamlabs Desktop": {
-    "url": "https://slobs-cdn.streamlabs.com/Streamlabs+Desktop+Setup.exe",
-    "installer_pattern": "streamlabs",
-    "check": { "type": "redirect" }
+  "Elgato Wave Link": {
+    "url": "https://edge.elgato.com/egc/windows/wavelink/download.php",
+    "check": { "type": "redirect" },
+    "installer_pattern": "wavelink"
+  },
+  "Elgato Stream Deck": {
+    "url": "https://edge.elgato.com/egc/windows/streamdeck/download.php",
+    "check": { "type": "redirect" },
+    "installer_pattern": "streamdeck"
+  },
+  "Elgato Control Center": {
+    "url": "https://edge.elgato.com/egc/windows/controlcenter/download.php",
+    "check": { "type": "redirect" },
+    "installer_pattern": "controlcenter"
+  },
+  "NVIDIA GeForce Experience": {
+    "url": "https://us.download.nvidia.com/GFE/GFEClient/3.27.0.120/GeForce_Experience_v3.27.0.120.exe",
+    "check": { "type": "redirect" },
+    "installer_pattern": "geforce"
   },
   "VLC Media Player": {
-    "url": "https://get.videolan.org/vlc/last/win64/vlc-3.0.21-win64.exe",
-    "installer_pattern": "vlc",
-    "check": { "type": "redirect" }
-  },
-  "7-Zip": {
-    "url": "https://www.7-zip.org/a/7z2400-x64.exe",
-    "installer_pattern": "7z",
-    "check": { "type": "redirect" }
+    "url": "https://get.videolan.org/vlc/3.0.21/win64/vlc-3.0.21-win64.exe",
+    "check": { "type": "html", "pattern": "vlc-([0-9.]+)-win64" },
+    "installer_pattern": "vlc"
   },
   "WinRAR": {
-    "url": "https://www.rarlab.com/rar/winrar-x64-700.exe",
-    "installer_pattern": "winrar",
-    "check": { "type": "redirect" }
+    "url": "https://www.win-rar.com/fileadmin/winrar-versions/winrar-x64-701.exe",
+    "check": { "type": "redirect" },
+    "installer_pattern": "winrar"
   },
-  "Notepad++": {
-    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/latest/download/npp.x64.Installer.exe",
-    "installer_pattern": "npp",
-    "check": { "type": "github_release" }
+  "HP Smart": {
+    "url": "https://ftp.hp.com/pub/softlib/software12/HP_Quick_Start/HP_Smart_App_Setup.exe",
+    "check": { "type": "redirect" },
+    "installer_pattern": "hpsmart"
   },
-  "Visual Studio Code": {
-    "url": "https://update.code.visualstudio.com/latest/win32-x64-user/stable",
-    "installer_pattern": "vs_code",
-    "check": { "type": "redirect" }
+  "Melon Studio": {
+    "url": "https://melonapp.com/download/windows/",
+    "check": { "type": "html", "pattern": "([0-9.]+)" },
+    "installer_pattern": "melon"
   },
-  "Google Chrome": {
-    "url": "https://dl.google.com/chrome/install/latest/chrome_installer.exe",
-    "installer_pattern": "chrome_installer",
-    "check": { "type": "redirect" }
-  },
-  "Mozilla Firefox": {
-    "url": "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US",
-    "installer_pattern": "firefox",
-    "check": { "type": "redirect" }
-  },
-  "Brave Browser": {
-    "url": "https://laptop-updates.brave.com/latest/win64",
-    "installer_pattern": "brave",
-    "check": { "type": "redirect" }
+  "UbiConnect": {
+    "url": "https://ubistatic3-a.akamaihd.net/orbit/launcher_installer/UbisoftConnectInstaller.exe",
+    "check": { "type": "redirect" },
+    "installer_pattern": "ubisoft"
   }
 }
