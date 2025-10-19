@@ -1,0 +1,87 @@
+{
+  "Discord": {
+    "url": "https://discord.com/api/download?platform=win",
+    "installer_pattern": "discordsetup",
+    "check": { "type": "redirect" }
+  },
+  "Steam": {
+    "url": "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe",
+    "installer_pattern": "steamsetup",
+    "check": { "type": "redirect" }
+  },
+  "Ubisoft Connect": {
+    "url": "https://ubistatic3-a.akamaihd.net/orbit/launcher_installer/UbisoftConnectInstaller.exe",
+    "installer_pattern": "ubisoftconnect",
+    "check": { "type": "redirect" }
+  },
+  "Epic Games Launcher": {
+    "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi",
+    "installer_pattern": "epicgameslauncher",
+    "check": { "type": "redirect" }
+  },
+  "Riot Client": {
+    "url": "https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.na.exe",
+    "installer_pattern": "riot",
+    "check": { "type": "redirect" }
+  },
+  "Battle.net": {
+    "url": "https://downloader.battle.net/download/getInstallerForGame?os=win&installer=Battle.net-Setup.exe",
+    "installer_pattern": "battle.net-setup",
+    "check": { "type": "redirect" }
+  },
+  "GOG Galaxy": {
+    "url": "https://webinstallers.gog-statics.com/download/GOG_Galaxy_2.0.exe",
+    "installer_pattern": "gog_galaxy",
+    "check": { "type": "redirect" }
+  },
+  "OBS Studio": {
+    "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-Installer.exe",
+    "installer_pattern": "obs-studio",
+    "check": { "type": "redirect" }
+  },
+  "Streamlabs Desktop": {
+    "url": "https://slobs-cdn.streamlabs.com/Streamlabs+Desktop+Setup.exe",
+    "installer_pattern": "streamlabs",
+    "check": { "type": "redirect" }
+  },
+  "VLC Media Player": {
+    "url": "https://get.videolan.org/vlc/last/win64/vlc-3.0.21-win64.exe",
+    "installer_pattern": "vlc",
+    "check": { "type": "redirect" }
+  },
+  "7-Zip": {
+    "url": "https://www.7-zip.org/a/7z2400-x64.exe",
+    "installer_pattern": "7z",
+    "check": { "type": "redirect" }
+  },
+  "WinRAR": {
+    "url": "https://www.rarlab.com/rar/winrar-x64-700.exe",
+    "installer_pattern": "winrar",
+    "check": { "type": "redirect" }
+  },
+  "Notepad++": {
+    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/latest/download/npp.x64.Installer.exe",
+    "installer_pattern": "npp",
+    "check": { "type": "github_release" }
+  },
+  "Visual Studio Code": {
+    "url": "https://update.code.visualstudio.com/latest/win32-x64-user/stable",
+    "installer_pattern": "vs_code",
+    "check": { "type": "redirect" }
+  },
+  "Google Chrome": {
+    "url": "https://dl.google.com/chrome/install/latest/chrome_installer.exe",
+    "installer_pattern": "chrome_installer",
+    "check": { "type": "redirect" }
+  },
+  "Mozilla Firefox": {
+    "url": "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US",
+    "installer_pattern": "firefox",
+    "check": { "type": "redirect" }
+  },
+  "Brave Browser": {
+    "url": "https://laptop-updates.brave.com/latest/win64",
+    "installer_pattern": "brave",
+    "check": { "type": "redirect" }
+  }
+}
